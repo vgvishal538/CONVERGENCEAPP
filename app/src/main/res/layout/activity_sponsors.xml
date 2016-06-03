@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="vishaldev.convergence.SponsorsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titlelay"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:id="@+id/texttilte"
+        android:textColor="@android:color/black"
+        android:text="@string/titlesponser"/>
+
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/titlelay"
+        android:id="@+id/titlehorizntl"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/sponsorimg"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+
+            android:src="@drawable/newsponserimg"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/sponsorimg1"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_marginTop="13dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img"/>
+
+    </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/eventlay"
+        android:layout_below="@+id/titlehorizntl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="@string/eventsponsor"/>
+
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventlay">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/latesteventsponsor"/>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
